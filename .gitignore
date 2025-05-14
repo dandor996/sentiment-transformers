@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.ipynb_checkpoints/
+.env
+venv/
 
 # C extensions
 *.so
@@ -172,3 +175,18 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# --- Dati raw (sentiment datasets) ---
+/data/raw/*
+!/data/raw/.gitkeep
+
+
+# --- Modelli e checkpoint ---
+/models/
+/checkpoints/
+
+# --- Notebook outputs ---
+/notebooks/output/
+
+# --- Configurazioni locali ---
+/config.yaml
